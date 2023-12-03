@@ -169,7 +169,7 @@ domId('btn-6').onclick = function(){
     var tempArray = listSoNguyen.slice(0,listSoNguyen.length)
 
     if(!areValidNumbers(index1,index2) || !checkIndexs(+index1,+index2,tempArray)){
-        domId('result6').innerHTML = `Giá trị nhập vào không hợp lệ (Vị trí không được trùng nhau, vị trí không được nằm ngoài mảng vị trí phải là số nguyên & không được để trống)`
+        domId('result6').innerHTML = `Giá trị nhập vào không hợp lệ (Vị trí không được trùng nhau, vị trí không được nằm ngoài mảng, vị trí phải là số nguyên & không được để trống)`
         tempArray = listSoNguyen.slice(0,listSoNguyen.length);
     }else{
         index1 = +index1;
