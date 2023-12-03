@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&amp;display=swap" rel="stylesheet">
+
+    <!--* Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+
+    <!--* main  css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <nav class="navigation">
+        <header class="navigation__title">
+            <h2>Bài tập mảng</h2>
+        </header>
+        <!-- <form class="nhapN d-flex justify-content-between my-4 gap-3">
+            <input type="text" placeholder="Nhập vào số nguyên" class="w-100">
+            <button class="flex-shrink-0">Thêm số</button>
+        </form> -->
+
+        <input class="c-checkbox" type="checkbox" id="checkbox">
+        <div class="c-formContainer">
+            <form class="c-form" action="">
+                <input class="c-form__input" placeholder="Nhập vào số nguyên" type="text" id="parent-input">
+                <label class="c-form__buttonLabel" for="checkbox">
+                    <button class="c-form__button">Add</button>
+                </label>
+                <label class="c-form__toggle" for="checkbox" data-title="Let's start"></label>
+            </form>
+        </div>
+        <div class="alert alert-danger my-4 animate__animated animate__zoomIn" id="alert1"
+            style='color: white;--bs-alert-bg: #ff8663;' role="alert">
+        </div>
+        <article class="my-4 animate__animated animate__fadeInUp animate__delay-0.5s" id="article">
+            <ul class="accordion">
+                <li class="accordion__item" id="item1">
+                    <a href="#" class="accordion__link">1️. Tổng số dương</a>
+                    <ul class="sub-accordion">
+                        <button class="button-pushable d-flex mx-auto my-3" role="button" id="btn-1">
+                            <span class="button-shadow"></span>
+                            <span class="button-edge"></span>
+                            <span class="button-front">
+                                Tính Tổng
+                            </span>
+                        </button>
+                        <p id="result1" class="text-center mt-2"></p>
+                    </ul>
+                </li>
+                <li class="accordion__item" id="item2">
+                    <a href="#" class="accordion__link">2. Đếm số dương</a>
+                    <ul class="sub-accordion">
+                        <button class="button-pushable d-flex mx-auto my-3" role="button" id="btn-2">
+                            <span class="button-shadow"></span>
+                            <span class="button-edge"></span>
+                            <span class="button-front">
+                                Đếm số
+                            </span>
+                        </button>
+                        <p id="result2" class="text-center mt-2"></p>
+                    </ul>
+                </li>
+                <li class="accordion__item" id="item3">
+                    <a href="#" class="accordion__link">3. Tìm số nhỏ nhất</a>
+                    <ul class="sub-accordion">
+                        <button class="button-pushable d-flex mx-auto my-3" role="button" id="btn-3">
+                            <span class="button-shadow"></span>
+                            <span class="button-edge"></span>
+                            <span class="button-front">
+                                số nhỏ nhất
+                            </span>
+                        </button>
+                        <p id="result3" class="text-center mt-2"></p>
+                    </ul>
+                </li>
+                <li class="accordion__item" id="item4">
+                    <a href="#" class="accordion__link">4. Tìm số dương nhỏ nhất</a>
+                    <ul class="sub-accordion">
+                        <button class="button-pushable d-flex mx-auto my-3" role="button" id="btn-4">
+                            <span class="button-shadow"></span>
+                            <span class="button-edge"></span>
+                            <span class="button-front">
+                                số dương nhỏ nhất
+                            </span>
+                        </button>
+                        <p id="result4" class="text-center mt-2"></p>
+                    </ul>
+                </li>
+                <li class="accordion__item" id="item5">
+                    <a href="#" class="accordion__link">5. Tìm số chẵn cuối cùng</a>
+                    <ul class="sub-accordion">
+                        <button class="button-pushable d-flex mx-auto my-3" role="button" id="btn-5">
+                            <span class="button-shadow"></span>
+                            <span class="button-edge"></span>
+                            <span class="button-front">
+                                Tìm số chẵn
+                            </span>
+                        </button>
+                        <p id="result5" class="text-center mt-2"></p>
+                    </ul>
+                </li>
+                <li class="accordion__item" id="item6">
+                    <a href="#" class="accordion__link">6. Đổi chỗ</a>
+                    <ul class="sub-accordion">
+                        <div class="d-flex justify-content-around mt-2">
+                            <label class="input">
+                                <input class="input__field" type="text" id="vitri1" placeholder=" "/>
+                                <span class="input__label">Vị trí 1</span>
+                              </label>
+
+                              <label class="input">
+                                <input class="input__field" type="text" id="vitri2" placeholder=" " />
+                                <span class="input__label">Vị trí 2</span>
+                              </label>
+                        </div>
+                        <button class="button-pushable d-flex mx-auto my-3" role="button" id="btn-6">
+                            <span class="button-shadow"></span>
+                            <span class="button-edge"></span>
+                            <span class="button-front">
+                                Đổi chỗ
+                            </span>
+                        </button>
+                        <p id="result6" class="text-center mt-2"></p>
+                    </ul>
+                </li>
+                <li class="accordion__item" id="item7">
+                    <a href="#" class="accordion__link">7. Sắp xếp tăng dần</a>
+                    <ul class="sub-accordion">
+                        <button class="button-pushable d-flex mx-auto my-3" role="button" id="btn-7">
+                            <span class="button-shadow"></span>
+                            <span class="button-edge"></span>
+                            <span class="button-front">
+                                Sắp xếp
+                            </span>
+                        </button>
+                        <p id="result7" class="text-center mt-2"></p>
+                    </ul>
+                </li>
+                <li class="accordion__item" id="item8">
+                    <a href="#" class="accordion__link">8. Tìm số nguyên tố đầu tiên</a>
+                    <ul class="sub-accordion">
+                        <button class="button-pushable d-flex mx-auto my-3" role="button" id="btn-8">
+                            <span class="button-shadow"></span>
+                            <span class="button-edge"></span>
+                            <span class="button-front">
+                                Tìm số nguyên tố
+                            </span>
+                        </button>
+                        <p id="result8" class="text-center mt-2"></p>
+                    </ul>
+                </li>
+                <li class="accordion__item" id="item9">
+                    <a href="#" class="accordion__link">9. Đếm số nguyên</a>
+                    <ul class="sub-accordion">
+                        <form class="sub-form d-flex justify-content-center my-3">
+                            <div>
+                                <input type="text" class="form__field" placeholder="Nhập vào số thực" />
+                                <button class="btn btn--primary btn--inside uppercase">Thêm vào</button>
+                            </div>
+                        </form>
+                        <div class="alert alert-danger my-4" id="alert2"
+                            style='color: white;--bs-alert-bg: #ff8663;' role="alert">
+                            hello world
+                        </div>
+                        <button class="button-pushable d-flex mx-auto my-2" role="button" id="btn-9">
+                            <span class="button-shadow"></span>
+                            <span class="button-edge"></span>
+                            <span class="button-front">
+                                Đếm số nguyên
+                            </span>
+                        </button>
+                        <p id="result9" class="text-center mt-2">123</p>
+                    </ul>
+                </li>
+                <li class="accordion__item" id="item10">
+                    <a href="#" class="accordion__link">10. So sánh số lượng số âm và dương</a>
+                    <ul class="sub-accordion">
+                        <button class="button-pushable d-flex mx-auto my-3" role="button" id="btn-10">
+                            <span class="button-shadow"></span>
+                            <span class="button-edge"></span>
+                            <span class="button-front">
+                                So sánh
+                            </span>
+                        </button>
+                        <p id="result10" class="text-center mt-2"></p>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+    </nav>
+
+    <!-- Bootrap 5 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/method.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
